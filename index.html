@@ -312,8 +312,8 @@
       setStatus("Done!", "ok");
     } catch (err) {
       console.error(err);
-      setStatus("Generation failed. Try running via a local server or check the console.", "err");
-      alert("Generation failed. Make sure you're running on localhost (not file://) and Puter is allowed in your browser.");
+      setStatus("Generation failed. Some models may not work.");
+      alert("Generation failed. Make sure Puter is allowed in your browser.");
     } finally {
       setLoading(false);
     }
@@ -346,3 +346,4 @@
 
 </body>
 </html>
+
